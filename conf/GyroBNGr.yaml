@@ -1,0 +1,32 @@
+defaults:
+  - _self_
+  - dataset: HDM05
+  - nnet: GrNet # GrNet GrNetGyroBN
+  - override hydra/launcher: joblib
+fit:
+  epochs: 400
+  batch_size: 30
+  threadnum: 2
+  folds: 1
+  is_writer: True
+  cycle: 1
+  seed: 1024
+  is_save: False
+  device: cpu #cpu,0
+  is_clip: True
+  clip_factor: 5
+  description: null
+
+hydra:
+  run:
+    dir: ./outputs/debug
+  sweep:
+    dir: ./outputs/debug
+    subdir: '.'
+  launcher:
+    n_jobs: -1
+  job_logging:
+    handlers:
+      file:
+        class: logging.FileHandler
+        filename: default.log

@@ -1,0 +1,9 @@
+dataset: cora  # which dataset to use
+path: /data
+val_prop: 0.05  # proportion of validation edges for link prediction
+test_prop: 0.1  # proportion of test edges for link prediction
+use_feats: 1  # whether to use node features or not
+normalize_feats: 1  # whether to normalize input node features
+normalize_adj: 1  # whether to row-normalize the adjacency matrix
+split_seed: 1234  # seed for data splits (train/test/val)
+

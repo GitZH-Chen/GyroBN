@@ -1,0 +1,23 @@
+model:
+  task: lp  # which tasks to train on, can be any of [lp, nc]
+  model: HNN  # which encoder to use, can be any of [Shallow, MLP, HNN, GCN, GAT, HyperGCN]
+  dim: 128  # embedding dimension
+  manifold: PoincareBall  # which manifold to use, can be any of [Euclidean, Hyperboloid, PoincareBall]
+  dropout: 0.2  # dropout probability
+  c: 1.0  # hyperbolic radius, set to None for trainable curvature
+  r: 2.0  # fermi-dirac decoder parameter for lp
+  t: 1.0  # fermi-dirac decoder parameter for lp
+  pos_weight: 0  # whether to upweight positive class in node classification tasks
+  num_layers: 2  # number of hidden layers in encoder
+  bias: 1  # whether to use bias (1) or not (0)
+  act: relu  # relu, null
+
+BN_param:
+    is_bn: False
+    bn_type: GyroBNH #GyroBNH,RBNH
+
+optimizer:
+  lr: 0.01  # learning rate
+  weight_decay: 0.001  # l2 regularization strength
+  optimizer: Adam  # which optimizer to use, can be any of [Adam, RiemannianAdam]
+  gamma: 0.5  # gamma for lr scheduler

@@ -1,0 +1,38 @@
+defaults:
+  - _self_
+  - dataset: LP
+  - nnet: HNN
+  - override hydra/launcher: joblib
+
+fit:
+  is_writer: True
+  folds: 1  # training folds
+  epochs: 5000  # maximum number of epochs to train for
+  cuda: 0  # which cuda device to use (-1 for cpu training)
+  patience: 100  # patience for early stopping
+  seed: 1234  # seed for training
+  log_freq: 50  # how often to compute print train/val metrics (in epochs)
+  eval_freq: 1  # how often to compute val metrics (in epochs)
+  save: 0  # 1 to save model and logs and 0 otherwise
+  save_dir: null # path to save training logs and model weights (defaults to logs/task/date/run/)
+  sweep_c: 0
+  lr_reduce_freq: null  # reduce lr every lr-reduce-freq or None to keep lr constant
+  print_epoch: true
+  grad_clip: null  # max norm for gradient clipping, or None for no gradient clipping
+  min_epochs: 100  # do not early stop before min-epochs
+  double_precision: 1  # whether to use double precision
+  description: null
+
+hydra:
+  run:
+    dir: ./outputs/${dataset.dataset}
+  sweep:
+    dir: ./outputs/${dataset.dataset}
+    subdir: '.'
+  launcher:
+    n_jobs: -1
+  job_logging:
+    handlers:
+      file:
+        class: logging.FileHandler
+        filename: default.log
