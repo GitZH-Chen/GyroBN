@@ -44,7 +44,7 @@ conda env create --file environment.yaml
 **Note** that the [hydra](https://hydra.cc/) package is used to manage configuration files.
 
 ## Demos
- Demos of Grassmannian and Hyperbolic GyroBN, which can be found in `demo.py`:
+ Demos of Grassmannian and hyperbolic GyroBN, which can be found in `demo.py`:
 
 ```python
 import torch as th
