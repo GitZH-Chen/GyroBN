@@ -4,6 +4,7 @@
 
 # Gyrogroup Batch Normalization
 
+## Introduction
 This is the official code for our ICLR 2025 publication: *Gyrogroup Batch Normalization*. 
 
 If you find this project helpful, please consider citing us as follows:
@@ -72,7 +73,7 @@ output_hyperbolic = rbn_h(random_hyperbolic_data)  # Apply GyroBNH
 print("Grassmannian BN output shape:", output_grassmann.shape)
 print("Hyperbolic BN output shape:", output_hyperbolic.shape)
 ```
-## Running experiments
+## Running Experiments
 
 ### Dataset
 The preprocessed Grassmannian from the HDM05 dataset can be found [here](https://www.dropbox.com/scl/fi/chzvrg3srq6jwntqlr8n4/HDM05_Grassmannian.zip?rlkey=r4b87nybepv58bu8re14jp57d&st=vyy888lc&dl=0). 
