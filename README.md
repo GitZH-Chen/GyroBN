@@ -72,16 +72,15 @@ output_hyperbolic = rbn_h(random_hyperbolic_data)  # Apply GyroBNH
 print("Grassmannian BN output shape:", output_grassmann.shape)
 print("Hyperbolic BN output shape:", output_hyperbolic.shape)
 ```
+## Running experiments
 
 ### Dataset
-
 The preprocessed Grassmannian from the HDM05 dataset can be found [here](https://www.dropbox.com/scl/fi/chzvrg3srq6jwntqlr8n4/HDM05_Grassmannian.zip?rlkey=r4b87nybepv58bu8re14jp57d&st=vyy888lc&dl=0). 
 The link prediction datasets can be found [here](https://www.dropbox.com/scl/fi/5rm3lwp367spd58xp1vil/Graph-LP.zip?rlkey=t32yiestqmqfdcuodqax8n4ny&st=lqbd8x3m&dl=0).
 Please download the datasets and put them in your folder.
 If necessary, change the `path` in `conf/dataset/HDM05.yaml` and `conf/dataset/LP.yaml`,
 
-### Running experiments
-#### Grassmannian
+### Grassmannian
 Please run this command for the main experiments on the HDM05 (Tab. 3):
 ```train
 bash exp_grassmannian.sh
@@ -96,7 +95,7 @@ The tensorboard results on the HDM05 under 1-block architecture:
 
 **Note:** You can change the `path` in `exp_xxx.sh`, which will override the hydra config.
 
-#### Hyperbolic
+### Hyperbolic
 Please run this command for HNN with or without GyroBN-H or RBN-H on the link prediction task. (Tab. 5):
 ```train
 bash exp_hyperbolic.sh
