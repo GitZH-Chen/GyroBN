@@ -16,7 +16,7 @@ If you find this project helpful, please consider citing us as follows:
     year={2025}
 }
 ```
-As discussed in our main paper, GyroBN also naturally incorporate our previous [LieBN](https://github.com/GitZH-Chen/LieBN.git):
+As discussed in our main paper, GyroBN also naturally incorporates our previous [LieBN](https://github.com/GitZH-Chen/LieBN.git):
 ```bib
 @inproceedings{chen2024liebn,
     title={A Lie Group Approach to Riemannian Batch Normalization},
@@ -27,11 +27,11 @@ As discussed in our main paper, GyroBN also naturally incorporate our previous [
 ```
 
 
-If you have any problem, do not hesitate to contact me via ziheng_ch@163.com.
+If you have any problem, please contact me via ziheng_ch@163.com.
 
 ## Implementations
 This source code contains GyroBN on the Grassmannian and hyperbolic spaces. 
-Besides, we also implement RBN and ManifoldNorm on the Grassmannian, as shown in Tab. 3.
+We also implement RBN and ManifoldNorm on the Grassmannian, as shown in Tab. 3.
 
 ## Requirements
 
@@ -91,8 +91,6 @@ Please run this command for the KBlock ablations on the HDM05 (Tab. 4):
 bash exp_grassmannian.sh
 ```
 The tensorboard results on the HDM05 under 1-block architecture:
-
-Acc on the HDM05 dataset.
 ![GyroBNGr](Acc-GyroGr-HDM05.png)
 
 **Note:** You can change the `path` in `exp_xxx.sh`, which will override the hydra config.
