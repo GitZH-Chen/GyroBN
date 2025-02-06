@@ -51,7 +51,7 @@ output_grassmann = rbn(random_data)
 
 # --- Typical use of GyroBNH in the Poincaré ball
 random_euclidean_vectors = th.randn(bs, n)/10
-poincare_ball = Poincare()  # Assuming this handles the Poincaré ball manifold
+poincare_ball = Poincare() 
 random_hyperbolic_data = poincare_ball.projx(random_euclidean_vectors)  # Generate random points in the Poincaré ball
 
 rbn_h = GyroBNH(dim=n,manifold=poincare_ball)  # Initialize GyroBNH for hyperbolic normalization
