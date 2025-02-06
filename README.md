@@ -9,13 +9,24 @@ This is the official code for our ICLR 2025 publication: *Gyrogroup Batch Normal
 If you find this project helpful, please consider citing us as follows:
 
 ```bib
-@inproceedings{chen2025gyrogroup,
+@inproceedings{chen2025gyrobn,
     title={Gyrogroup Batch Normalization},
     author={Ziheng Chen and Yue Song and Xiaojun Wu and Nicu Sebe},
     booktitle={The Thirteenth International Conference on Learning Representations},
     year={2025}
 }
 ```
+As discussed in our main paper, GyroBN also naturally incorporate our previous [LieBN](https://github.com/GitZH-Chen/LieBN.git):
+```bib
+@inproceedings{chen2024liebn,
+    title={A Lie Group Approach to Riemannian Batch Normalization},
+    author={Ziheng Chen and Yue Song and Yunmei Liu and Nicu Sebe},
+    booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024},
+}
+```
+
+
 If you have any problem, do not hesitate to contact me via ziheng_ch@163.com.
 
 ## Implementations
@@ -60,7 +71,6 @@ output_hyperbolic = rbn_h(random_hyperbolic_data)  # Apply GyroBNH
 # Print shape to verify outputs
 print("Grassmannian BN output shape:", output_grassmann.shape)
 print("Hyperbolic BN output shape:", output_hyperbolic.shape)
-
 ```
 
 ### Dataset
