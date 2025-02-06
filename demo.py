@@ -1,5 +1,5 @@
 import torch as th
-from RieNets.grnets.GrBN import GyroGrBN
+from RieNets.grnets.GrBN import GyroBNGr
 from Geometry.Grassmannian import GrassmannianGyro
 from RieNets.hnns.layers.GyroBNH import GyroBNH
 from frechetmean import Poincare
@@ -8,7 +8,7 @@ from frechetmean import Poincare
 bs, c, n, p = 32, 8, 30, 10
 grassmannian = GrassmannianGyro(n=n, p=p)
 random_data = grassmannian.random(bs, c, n, p)
-rbn = GyroGrBN(shape=[c, n, p])
+rbn = GyroBNGr(shape=[c, n, p])
 output_grassmann = rbn(random_data)
 
 # --- Typical use of GyroBNH in the Poincaré ball
