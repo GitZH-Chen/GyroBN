@@ -11,7 +11,7 @@ random_data = grassmannian.random(bs, c, n, p)
 rbn = GyroBNGr(shape=[c, n, p])
 output_grassmann = rbn(random_data)
 
-# --- Typical use of GyroBNH in the Poincaré ball
+# --- Typical use of hyperbolic GyroBN in the Poincaré ball
 random_euclidean_vectors = th.randn(bs, n)/10
 poincare_ball = Poincare()
 random_hyperbolic_data = poincare_ball.projx(random_euclidean_vectors)  # Generate random points in the Poincaré ball
