@@ -31,7 +31,7 @@ If you have any problem, please contact me via ziheng_ch@163.com.
 
 ## Implementations
 This source code contains GyroBN on the Grassmannian and hyperbolic spaces. 
-We also implement RBN and ManifoldNorm on the Grassmannian, as shown in Tab. 3.
+We also implemented RBN and ManifoldNorm on the Grassmannian, as shown in Tab. 3.
 
 ## Requirements
 
@@ -88,9 +88,10 @@ bash exp_grassmannian.sh
 ```
 Please run this command for the KBlock ablations on the HDM05 (Tab. 4):
 ```train
-bash exp_grassmannian.sh
+bash exp_grassmannian_ablations.sh
 ```
 The tensorboard results on the HDM05 under 1-block architecture:
+
 ![GyroBNGr](Acc-GyroGr-HDM05.png)
 
 **Note:** You can change the `path` in `exp_xxx.sh`, which will override the hydra config.
@@ -100,7 +101,8 @@ Please run this command for HNN with or without GyroBN-H or RBN-H on the link pr
 ```train
 bash exp_hyperbolic.sh
 ```
-ROC on three typical link prediction datasets.
+ROC on three typical link prediction datasets:
+
 ![GyroBNH](Acc-GyroBNH-LP.png)
 
 ### Visualization
