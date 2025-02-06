@@ -13,7 +13,7 @@ def hook_fn(name):
         saved_grads[name] = grad.clone()
     return hook
 
-class GyroGrBN(nn.Module):
+class GyroBNGr(nn.Module):
     """
     Implementation of GyroBN on the Grassmannian, input are expected to be [b,c,n,p]
     KF and gyro operations are caculated by ONB perspective

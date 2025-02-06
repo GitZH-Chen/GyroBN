@@ -3,7 +3,7 @@ import torch.nn as nn
 
 from RieNets.grnets.nn import ProjMap,OrthMap,GyroTransGr,ProjMLR
 
-from RieNets.grnets.GrBN import GyroGrBN
+from RieNets.grnets.GrBN import GyroBNGr
 from RieNets.grnets.GrBN import RBNGr
 from RieNets.grnets.GrBN import ManifoldNormGr
 
@@ -59,8 +59,8 @@ class GyroGr(nn.Module):
         BN_shape = [args.channels, int(args.final_dim), args.subspace_dim]
         if args.bn_type == 'RBNGr':
             self.feature.append(RBNGr(shape=BN_shape))
-        elif args.bn_type == 'GyroGrBN':
-            self.feature.append(GyroGrBN(shape=BN_shape))
+        elif args.bn_type == 'GyroBNGr':
+            self.feature.append(GyroBNGr(shape=BN_shape))
         elif args.bn_type == 'ManifoldNormGr':
             self.feature.append(ManifoldNormGr(shape=BN_shape))
         else:

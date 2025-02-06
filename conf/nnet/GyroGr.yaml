@@ -8,7 +8,7 @@ model:
 
 BN_param:
     is_bn: False
-    bn_type: GyroGrBN #GyroGrBN,RBNGr,ManifoldNormGr
+    bn_type: GyroBNGr #GyroBNGr,RBNGr,ManifoldNormGr
 
 optimizer:
     optimizer_mode: SGD #SGD,ADAM,AMSGRAD, Adadelta for Gyro
