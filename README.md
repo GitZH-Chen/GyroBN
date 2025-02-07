@@ -5,8 +5,13 @@
 # Gyrogroup Batch Normalization
 
 <div align="center">
-    <img src="GyroBN_vis_grass_poincare.png" width="800">
+    <figure>
+        <img src="GyroBN_vis_grass_poincare.png" width="800">
+        <figcaption>Figure 1: Visualization of GyroBN on the Grassmann and Poincaré ball.</figcaption>
+    </figure>
 </div>
+
+
 
 ## Introduction
 This is the official code for our ICLR 2025 publication: *Gyrogroup Batch Normalization*. 
