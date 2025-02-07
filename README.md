@@ -4,6 +4,10 @@
 
 # Gyrogroup Batch Normalization
 
+<div align="center">
+    <img src="GyroBN_vis_grass_poincare.png" width="800">
+</div>
+
 ## Introduction
 This is the official code for our ICLR 2025 publication: *Gyrogroup Batch Normalization*. 
 
