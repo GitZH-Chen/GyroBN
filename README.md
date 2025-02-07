@@ -11,7 +11,12 @@
     </figure>
 </div>
 
-
+<div align="center">
+    <figure>
+        <img src="isometry.png" width="800">
+        <figcaption>Figure 2: Conceptual illustration of our derivation on gyroisometries.</figcaption>
+    </figure>
+</div>
 
 ## Introduction
 This is the official code for our ICLR 2025 publication: *Gyrogroup Batch Normalization*. 
