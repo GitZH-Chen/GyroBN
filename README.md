@@ -10,7 +10,9 @@
         <figcaption>Figure 1: Visualization of GyroBN on the Grassmann and Poincaré ball.</figcaption>
     </figure>
 </div>
+
 <br><br>  <!-- Add spacing between figures -->
+
 <div align="center">
     <figure>
         <img src="isometry.png" width="800">
