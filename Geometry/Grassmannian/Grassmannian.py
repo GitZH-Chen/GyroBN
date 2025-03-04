@@ -129,8 +129,8 @@ class Grassmannian(Mymanifold):
             if is_return_tuple:
                 n, p = U1.shape[-2], U1.shape[-1]
                 asin_singvals = th.zeros_like(U1)[..., -1, :] if len(U1.shape) > 2 else th.zeros_like(U1[-1,:])
-                Q_hat = th.eye(n, p)
-                R1_vh = th.eye(p, p)
+                Q_hat = th.eye(n, p,dtype=U0.dtype,device=U0.device)
+                R1_vh = th.eye(p, p,dtype=U0.dtype,device=U0.device)
                 return Q_hat, asin_singvals, R1_vh
             else:
                 # note that we use U1 here, as U0 might be [c,n,p]
