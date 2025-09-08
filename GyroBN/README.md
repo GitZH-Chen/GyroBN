@@ -34,7 +34,7 @@ If you find this project helpful, please consider citing us as follows:
 }
 @article{chen2025gyrobn_extension,
   title   = {Riemannian Batch Normalization: A Gyro Approach},
-  author  = {Chen, Ziheng and Wu, Xiao-Jun and Sebe, Nicu},
+  author  = {Ziheng Chen and Xiaojun Wu and Nicu Sebe},
   journal = {arXiv},
   year    = {2025},
 }
