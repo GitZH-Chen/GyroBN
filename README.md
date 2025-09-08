@@ -15,7 +15,7 @@ The complete implementations can be found in the `GyroBN` folder. This toolbox i
 <div align="center">
     <figure>
         <img src="GyroBN/visualization/GyroBN_illustration.png" width="800">
-        <figcaption>Figure 1: Visualization of GyroBN on the Grassmann and Poincaré ball.</figcaption>
+        <figcaption>Figure 1: Visualization.</figcaption>
     </figure>
 </div>
 
