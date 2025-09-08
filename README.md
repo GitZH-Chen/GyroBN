@@ -4,6 +4,14 @@
 
 # Gyrogroup Batch Normalization
 
+**Updates (09/2025):**  We have integrated the GyroBN implementations into a toolbox, now supporting seven geometries:
+
+- ONB Grassmannian;
+- Constant curvature spaces (Poincaré ball, hyperboloid, Beltrami–Klein, sphere, projected hypersphere);
+- Full-rank correlation manifolds (Poly-Hyperbolic-Cholesky metric).
+
+The complete implementations can be found in the `GyroBN` folder. This toolbox is designed to be plug-and-play, making it easy to apply GyroBN as a drop-in normalization module across different neural architectures.
+
 <div align="center">
     <figure>
         <img src="GyroBN_vis_grass_poincare.png" width="800">
