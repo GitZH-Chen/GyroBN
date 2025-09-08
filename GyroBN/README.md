@@ -44,7 +44,7 @@ As discussed in our main paper, GyroBN also naturally incorporates our previous 
 @inproceedings{chen2024liebn,
     title={A Lie Group Approach to Riemannian Batch Normalization},
     author={Ziheng Chen and Yue Song and Yunmei Liu and Nicu Sebe},
-    booktitle={The Twelfth International Conference on Learning Representations},
+    booktitle={ICLR},
     year={2024},
 }
 ```
