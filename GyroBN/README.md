@@ -1,4 +1,4 @@
-[<img src="https://img.shields.io/badge/arXiv-2509.07115-b31b1b"></img>]&#40;https://arxiv.org/abs/2509.07115&#41;
+[<img src="https://img.shields.io/badge/arXiv-2509.07115-b31b1b"></img>](https://arxiv.org/abs/2509.07115)
 
 # Gyrogroup Batch Normalization
 
