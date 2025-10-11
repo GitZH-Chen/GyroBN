@@ -1,6 +1,4 @@
-[//]: # ([<img src="https://img.shields.io/badge/arXiv-2403.11261-b31b1b"></img>]&#40;https://arxiv.org/abs/2403.11261&#41;)
-[<img src="https://img.shields.io/badge/OpenReview|forum-d1NWq4PjJW-8c1b13"></img>](https://openreview.net/forum?id=d1NWq4PjJW)
-[<img src="https://img.shields.io/badge/OpenReview|pdf-d1NWq4PjJW-8c1b13"></img>](https://openreview.net/pdf?id=d1NWq4PjJW)
+([<img src="https://img.shields.io/badge/arXiv-2509.07115-b31b1b"></img>]&#40;https://arxiv.org/abs/2509.07115&#41;)
 
 # Gyrogroup Batch Normalization
 
@@ -34,8 +32,8 @@ If you find this project helpful, please consider citing us as follows:
 }
 @article{chen2025gyrobn_extension,
   title   = {Riemannian Batch Normalization: A Gyro Approach},
-  author  = {Ziheng Chen and Xiaojun Wu and Nicu Sebe},
-  journal = {arXiv},
+  author  = {Ziheng Chen and Xiaojun Wu and Bernhard Schölkopf and Nicu Sebe},
+  journal = {arXiv preprint arXiv: 2509.07115},
   year    = {2025},
 }
 ```
@@ -63,7 +61,7 @@ If you have any problem, please contact me via ziheng_ch@163.com.
 
 Notes:
 - By default, GyroBN uses `.detach()` when computing Fréchet statistics on the Grassmannian, following prior work (SPDNetBN, LieBN). 
-- For Constant curvature spaces and correlation matrices, GyroBN sets the iteration number to 1000 by default.
+- For constant curvature spaces and correlation matrices, GyroBN sets the iteration number to 1000 by default.
 
 ## Requirements
 Requierments: `torch`.
